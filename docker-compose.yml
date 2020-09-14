@@ -1,0 +1,10 @@
+version: '3'
+services:
+  ner:
+    build: src/api/
+    container_name: akg-api
+    image: akg-api:latest
+    ports:
+      - "40002:40000"
+      - "8501:8501"
+ 
